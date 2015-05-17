@@ -34,9 +34,9 @@ public interface CaveRepositoryService {
     /**
      * Create a Cave repository.
      *
-     * @param name the name of the repository.
+     * @param name     the name of the repository.
      * @param location the storage location of the repository.
-     * @param scan if true, the repository is scanned at creation time, and the OBR metadata are created.
+     * @param scan     if true, the repository is scanned at creation time, and the OBR metadata are created.
      * @return the Cave repository.
      * @throws Exception in case of creation failure.
      */

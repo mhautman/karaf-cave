@@ -21,7 +21,7 @@ import org.apache.felix.gogo.commands.Command;
 import org.apache.karaf.cave.server.api.CaveRepository;
 
 /**
- *  Update the OBR metadata of a Cave repository
+ * Update the OBR metadata of a Cave repository
  */
 @Command(scope = "cave", name = "repository-update", description = "Update OBR metadata of a Cave repository")
 public class RepositoryUpdateCommand extends CaveRepositoryCommandSupport {

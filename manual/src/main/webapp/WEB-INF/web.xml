@@ -20,31 +20,31 @@
 -->
 
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
-        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
-        version="2.5">
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5">
 
-  <display-name>Apache Karaf Cave Documentation</display-name>
+    <display-name>Apache Karaf Cave Documentation</display-name>
 
-  <description>
-    Apache Karaf Cave Documentation
-  </description>
+    <description>
+        Apache Karaf Cave Documentation
+    </description>
 
-  <filter>
-    <filter-name>TemplateEngineFilter</filter-name>
-    <filter-class>org.fusesource.scalate.servlet.TemplateEngineFilter</filter-class>
-  </filter>
-  <filter-mapping>
-    <filter-name>TemplateEngineFilter</filter-name>
-    <url-pattern>/*</url-pattern>
-  </filter-mapping>
+    <filter>
+        <filter-name>TemplateEngineFilter</filter-name>
+        <filter-class>org.fusesource.scalate.servlet.TemplateEngineFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>TemplateEngineFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
 
-  <welcome-file-list>
-    <welcome-file>index.conf</welcome-file>
-  </welcome-file-list>
+    <welcome-file-list>
+        <welcome-file>index.conf</welcome-file>
+    </welcome-file-list>
 
-  <error-page>
-    <error-code>500</error-code>
-    <location>/WEB-INF/scalate/errors/500.scaml</location>
-  </error-page>
+    <error-page>
+        <error-code>500</error-code>
+        <location>/WEB-INF/scalate/errors/500.scaml</location>
+    </error-page>
 </web-app>

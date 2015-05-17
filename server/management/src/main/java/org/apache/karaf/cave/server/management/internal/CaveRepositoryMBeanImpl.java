@@ -48,17 +48,17 @@ public class CaveRepositoryMBeanImpl extends StandardMBean implements CaveReposi
         CompositeType caveRepositoryType = new CompositeType("Repository", "Karaf Cave repository",
                 new String[]{"name", "location"},
                 new String[]{"Name of the Cave repository", "Location of the Cave repository storage"},
-                new OpenType[]{SimpleType.STRING, SimpleType.STRING });
+                new OpenType[]{SimpleType.STRING, SimpleType.STRING});
 
         TabularType tableType = new TabularType("Repositories", "Table of all Karaf Cave repositories", caveRepositoryType,
-                new String[]{ "name" });
+                new String[]{"name"});
 
         TabularData table = new TabularDataSupport(tableType);
 
         for (int i = 0; i < caveRepositories.length; i++) {
             CompositeData data = new CompositeDataSupport(caveRepositoryType,
-                    new String[]{ "name", "location" },
-                    new Object[]{ caveRepositories[i].getName(), caveRepositories[i].getLocation() });
+                    new String[]{"name", "location"},
+                    new Object[]{caveRepositories[i].getName(), caveRepositories[i].getLocation()});
             table.put(data);
         }
 

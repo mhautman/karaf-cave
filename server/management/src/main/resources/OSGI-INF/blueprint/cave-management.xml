@@ -6,7 +6,8 @@
 
     <!-- reference to the Karaf MBean server -->
     <reference id="mbeanServer" interface="javax.management.MBeanServer">
-        <reference-listener ref="mbeanRegistrer" bind-method="registerMBeanServer" unbind-method="unregisterMBeanServer"/>
+        <reference-listener ref="mbeanRegistrer" bind-method="registerMBeanServer"
+                            unbind-method="unregisterMBeanServer"/>
     </reference>
 
     <bean id="caveRepositoryMBean" class="org.apache.karaf.cave.server.management.internal.CaveRepositoryMBeanImpl">

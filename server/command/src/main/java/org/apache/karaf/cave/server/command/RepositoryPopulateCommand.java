@@ -29,10 +29,10 @@ import java.net.URL;
 @Command(scope = "cave", name = "repository-populate", description = "Populate a Cave repository with the artifacts available at a given URL")
 public class RepositoryPopulateCommand extends CaveRepositoryCommandSupport {
 
-    @Option(name = "-no", aliases = { "--no-obr-generate" }, description = "Do not generate the OBR metadata", required = false, multiValued = false)
+    @Option(name = "-no", aliases = {"--no-obr-generate"}, description = "Do not generate the OBR metadata", required = false, multiValued = false)
     boolean noUpdate = false;
 
-    @Option(name = "-f", aliases = { "--filter" }, description = "Regex filter on the artifacts URL", required = false, multiValued = false)
+    @Option(name = "-f", aliases = {"--filter"}, description = "Regex filter on the artifacts URL", required = false, multiValued = false)
     String filter;
 
     @Argument(index = 0, name = "name", description = "The name of the repository", required = true, multiValued = false)

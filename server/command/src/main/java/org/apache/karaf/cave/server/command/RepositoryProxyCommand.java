@@ -35,10 +35,10 @@ public class RepositoryProxyCommand extends CaveRepositoryCommandSupport {
     @Argument(index = 1, name = "URL", description = "The URL to proxy", required = true, multiValued = false)
     String url = null;
 
-    @Option(name = "-no", aliases = { "--no-update", "--no-refresh", "--no-obr-register" }, description = "No refresh of the OBR service", required = false, multiValued = false)
+    @Option(name = "-no", aliases = {"--no-update", "--no-refresh", "--no-obr-register"}, description = "No refresh of the OBR service", required = false, multiValued = false)
     boolean noUpdate = false;
 
-    @Option(name = "-f", aliases = { "--filter" }, description = "Regex filter on the artifacts URL", required = false, multiValued = false)
+    @Option(name = "-f", aliases = {"--filter"}, description = "Regex filter on the artifacts URL", required = false, multiValued = false)
     String filter;
 
     protected Object doExecute() throws Exception {

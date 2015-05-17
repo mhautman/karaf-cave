@@ -90,7 +90,7 @@ public abstract class CaveRepository {
     /**
      * Proxy an URL (for instance a Maven repository), eventually filtering some artifacts, and add OBR information.
      *
-     * @param url the URL to proxy.
+     * @param url    the URL to proxy.
      * @param filter regex filter on the artifacts URL.
      * @throws Exception
      */
@@ -99,7 +99,7 @@ public abstract class CaveRepository {
     /**
      * Populate from a remote URL (for instance a Maven repository), and eventually update the OBR information.
      *
-     * @param url the URL to copy.
+     * @param url    the URL to copy.
      * @param update if true the OBR information is updated, false else.
      * @throws Exception in case of copy failure.
      */
@@ -108,7 +108,7 @@ public abstract class CaveRepository {
     /**
      * Populate from a remote URL (for instance a Maven repository), eventually filtering artifacts, and eventually update the OBR information.
      *
-     * @param url the URL to copy.
+     * @param url    the URL to copy.
      * @param filter regex filter on the artifacts URL.
      * @param update if true the OBR information is updated, false else.
      * @throws Exception

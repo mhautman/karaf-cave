@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <!--
 
@@ -25,7 +26,7 @@
         <groupId>org.apache</groupId>
         <artifactId>apache</artifactId>
         <version>14</version>
-        <relativePath />
+        <relativePath/>
     </parent>
 
     <groupId>org.apache.karaf</groupId>
@@ -54,8 +55,8 @@
         <connection>scm:git:https://git-wip-us.apache.org/repos/asf/karaf-cave.git</connection>
         <developerConnection>scm:git:https://git-wip-us.apache.org/repos/asf/karaf-cave.git</developerConnection>
         <url>https://git-wip-us.apache.org/repos/asf?p=karaf-cave.git;a=summary</url>
-      <tag>HEAD</tag>
-  </scm>
+        <tag>HEAD</tag>
+    </scm>
 
     <dependencyManagement>
         <dependencies>
@@ -198,7 +199,8 @@
                         <phase>generate-resources</phase>
                         <configuration>
                             <tasks>
-                                <copy file="NOTICE" todir="target/maven-shared-archive-resources/META-INF" failonerror="false" overwrite="true" />
+                                <copy file="NOTICE" todir="target/maven-shared-archive-resources/META-INF"
+                                      failonerror="false" overwrite="true"/>
                             </tasks>
                         </configuration>
                         <goals>

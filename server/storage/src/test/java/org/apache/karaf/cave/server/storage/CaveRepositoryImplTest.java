@@ -21,10 +21,10 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
+import java.net.URL;
+
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
-
-import java.net.URL;
 
 /**
  * Unit test of the Cave Repository Implementation.
